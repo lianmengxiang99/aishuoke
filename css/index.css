@@ -1,0 +1,539 @@
+@import "reset.min.css";
+@import "header.css";
+@import "linkAbout.css";
+@import "animate.css";
+/*首页轮播*/
+.swiper-container1 > .swiper-wrapper > .swiper-slider1 {
+    height: 600px;
+    /*background: red;*/
+    background: url("../img/slider2.png") center center no-repeat;
+    background-size: 100% 100%;
+}
+
+.swiper-container1 > .swiper-wrapper > .swiper-slider2 {
+    height: 600px;
+    background: url("../img/slider1.png") center center no-repeat;
+    background-size: 100% 100%;
+}
+
+.swiper-container1 > .swiper-wrapper > .swiper-slider3 {
+    height: 600px;
+    background: url("../img/slider3.png") center center no-repeat;
+    background-size: 100% 100%;
+}
+
+.swiper-pagination-bullet {
+    height: 12px;
+    width: 12px;
+    border: 1px solid white;
+    background: transparent;
+}
+
+.swiper-pagination-bullet-active {
+    background: white;
+}
+
+/*关于我们*/
+div.about_us {
+    padding: 70px 0 70px 0;
+    height: 500px;
+    width: 1100px;
+    margin: 0 auto 0;
+    position: relative;
+}
+
+h2.title {
+    color: rgb(51, 51, 51);
+    text-align: center;
+}
+
+/*以下都是在div.about进行操作  div.line div.line1和下面的通用*/
+div.line {
+    height: 1px;
+    width: 1100px;
+    background: rgb(202, 202, 202);
+    margin-top: 20px;
+}
+
+div.line1 {
+    height: 4px;
+    width: 120px;
+    background: rgb(102, 102, 102);
+    margin: 0 auto 0;
+    margin-top: -3px;
+}
+
+div.about {
+    margin-top: 100px;
+    width: 1100px;
+    /*animation: jello 2.5s;*/
+}
+div.about1{
+    animation: fadeInLeft 1s;
+}
+@keyframes fadeInLeft {
+    0%{opacity: 0;transform: translateX(-20px);}
+    100%{opacity: 1;transform: translateX(0);}
+}
+
+div.about:before, div.about:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+div.about > div.text {
+    width: 500px;
+    float: left;
+    margin-left: 60px;
+}
+
+/*关于我们图片介绍区域*/
+div.about > div.img {
+    float: right;
+}
+
+div.about > div.img:before, div.about > div.img:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+div.img > img.open {
+    width: 328px;
+    height: 217px;
+    padding: 4px;
+    border: 1px solid rgb(238, 238, 238);
+    float: left;
+}
+
+div.img > ul {
+    width: 117px;
+    float: right;
+    margin: 0 20px 0 20px;
+}
+
+div.img > ul > li.color {
+    background: rgb(238, 238, 238);
+}
+
+div.img > ul > li {
+    border: 1px solid rgb(238, 238, 238);
+    position: relative;
+}
+
+div.img > ul > li > img {
+    width: 115px;
+    height: 60px;
+    padding: 4px;
+}
+
+div.img > ul > li > div {
+    width: 0;
+    height: 0;
+    border-top: 7px solid transparent;
+    border-right: 7px solid rgb(243, 244, 245);
+    border-bottom: 6px solid transparent;
+    position: absolute;
+    top: 25px;
+    left: -8px;
+    display: none;
+}
+
+/*关于我们文本介绍区域*/
+/*以下都是在div.about操作(省略)*/
+div.text {
+    color: rgb(52, 52, 52);
+    font-size: 14px;
+}
+
+div.text > div > strong {
+    line-height: 25px;
+    font-weight: bold;
+}
+
+div.text > div:nth-child(2) {
+    margin-top: 20px;
+}
+
+div.text > div > p {
+    letter-spacing: 0.2px;
+    line-height: 25px;
+}
+
+div.text > a {
+    width: 120px;
+    display: block;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    border: 2px solid rgb(238, 238, 238);
+    color: rgb(183, 183, 183);
+    font-weight: 900;
+    margin-top: 40px;
+}
+
+div.text > a:hover {
+    background: rgb(238, 238, 238);
+}
+
+/*文章列表*/
+div.essay-tab {
+    width: 1100px;
+    margin: 0 auto 0;
+    overflow: hidden;
+    position: relative;
+}
+
+div.essay-tab > div.tab {
+    overflow: hidden;
+    margin: 0 auto 0;
+    width: 280px;
+    margin-top: 50px;
+}
+
+div.essay-tab > div.tab:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+div.essay-tab > div.tab > div {
+    float: left;
+    height: 37px;
+    width: 137px;
+    border: 1px solid rgb(140, 152, 159);
+    text-align: center;
+    line-height: 37px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+/*以下都在div.essay里操作(省略)*/
+div.tab > div.bg {
+    background: rgb(140, 152, 159);
+    color: white;
+    font-weight: 900;
+}
+
+div.tab > div:hover {
+    background: rgb(140, 152, 159);
+    color: white;
+    font-weight: 900;
+}
+
+div.switch {
+    width: 2200px;
+    margin-top: 50px;
+    background: rgb(247, 248, 250);
+}
+div.switch1{
+    animation: fadeInRight 1s;
+}
+@keyframes fadeInRight {
+    0%{opacity: 0;margin-left: 20px}
+    100%{opacity: 1;margin-left: 0;}
+}
+
+div.switch:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+div.switch > ul > :nth-child(7), div.switch > ul > :nth-child(8) {
+    border-bottom: 1px solid rgb(231, 232, 237);
+}
+
+div.switch > ul {
+    width: 1100px;
+    float: left;
+    overflow: hidden;
+}
+
+div.bgColor {
+    width: 100%;
+    background: rgb(247, 248, 250);
+    padding: 50px 0 50px 0;
+}
+
+div.switch > ul > li {
+    width: 550px;
+    height: 116px;
+    float: left;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+div.switch > ul > li > img {
+    float: left;
+    display: block;
+    margin-right: 14px;
+    border-radius: 50px;
+}
+
+div.switch > ul > li > div > h3 {
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-family: Arial;
+    font-weight: 600;
+}
+
+div.switch > ul > li > div > p {
+    width: 420px;
+    height: 42px;
+    overflow: hidden;
+    color: rgb(143, 143, 143);
+    font-family: Damascus;
+    font-weight: 900;
+}
+
+div.switch > ul > li > div > p:last-child {
+    margin-top: 5px;
+}
+
+div.switch > ul > a {
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: white;
+    background: rgb(233, 41, 13);
+    text-align: center;
+    line-height: 40px;
+    margin: 0 auto 0;
+    margin-top: 500px;
+    font-weight: 900;
+}
+
+/*公司案列展示*/
+div.case {
+    width: 1100px;
+    margin: 0 auto 0;
+    padding: 50px 0 50px 0;
+    position: relative;
+}
+
+div.case > ul.delay {
+    width: 1100px;
+    padding: 60px 15px 0 15px;
+
+}
+
+div.case > ul.delay:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+div.case > ul.delay > a {
+    display: block;
+}
+
+div.case > ul.delay > a:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+div.case > ul.delay > a {
+    float: left;
+}
+
+div.case > ul.delay > a > li {
+    float: left;
+    width: 240px;
+    height: 240px;
+    position: relative;
+    overflow: hidden;
+}
+
+div.case > ul.delay > a.left {
+    margin-left: 36px;
+}
+
+div.case > ul.delay > a > li > img {
+    width: 240px;
+    height: 200px;
+    position: absolute;
+}
+
+div.case > ul.delay > a > li > div {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 240px;
+    height: 40px;
+    background: rgb(140, 152, 159);
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-weight: 900;
+}
+
+div.case > a {
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: white;
+    background: rgb(233, 41, 13);
+    text-align: center;
+    line-height: 40px;
+    margin: 0 auto 0;
+    margin-top: 50px;
+}
+/*滚动动画*/
+div.case >ul>a.animate{
+    animation:fadeInDown 1s;
+    animation-fill-mode:both;
+}
+@keyframes fadeInDown {
+    0%{opacity:0;transform:translateY(-20px);}
+    100%{opacity: 1;margin-top: 0;transform:translateY(0);}
+}
+div.case >ul>a.animate:nth-child(2){
+    animation-delay: 0.3s;
+}
+div.case >ul>a.animate:nth-child(3){
+    animation-delay: 0.6s;
+}
+div.case >ul>a.animate:nth-child(4){
+    animation-delay: 0.9s;
+}
+
+    /*尾部 关于我们*/
+footer {
+    width: 100%;
+    height: 351px;
+    background: rgb(30, 30, 30);
+    padding-top: 50px;
+    position: relative;
+}
+
+footer > .footerAbout {
+    width: 1100px;
+    margin: 0 auto 0;
+}
+
+footer > .footerAbout:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+footer > .footerAbout > div {
+    float: left;
+    width: 360px;
+    margin-left: 20px;
+}
+
+footer > .footerAbout > div:nth-child(2) {
+    width: 305px;
+}
+
+footer > .footerAbout > div > h3 {
+    color: white;
+    display: inline-block;
+    line-height: 43px;
+    letter-spacing: -2px;
+    border-bottom: 4px solid rgb(131, 131, 131);
+}
+
+/*以下全在footer内操作(省略)*/
+.footerAbout > div > div {
+    height: 1px;
+    background: rgb(54, 54, 54);
+    margin-top: -2px;
+}
+
+.footerAbout > div.contact > ul {
+    margin-top: 25px;
+    font-size: 14px;
+}
+
+.footerAbout > div.contact > ul > li {
+    height: 42px;
+    line-height: 42px;
+    margin-top: 20px;
+    color: rgb(89, 88, 88);
+}
+
+.footerAbout > div.contact > ul > li > img {
+    height: 37px;
+    width: 37px;
+    vertical-align: top;
+    margin-right: 10px;
+}
+
+.footerAbout > div.follow > ul {
+    font-size: 14px;
+    margin-top: 25px;
+    color: rgb(89, 88, 88);
+}
+
+.footerAbout > div.follow > ul > li {
+    margin-top: 10px;
+}
+
+.footerAbout > div.follow > ul > li:nth-child(2) > a {
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+}
+
+.footerAbout > div.follow > ul > li:nth-child(2) > a:hover {
+    background: rgb(35, 183, 229);
+}
+
+.footerAbout > div.follow > ul > li:nth-child(2) > a:nth-child(1) {
+    background: url("../img/download.png") 0 0 no-repeat;
+    margin-left: 5px;
+}
+
+.footerAbout > div.follow > ul > li:nth-child(2) > a:nth-child(1):hover {
+    background: url("../img/downloadcolor.png") 0 0 no-repeat;
+}
+
+.footerAbout > div.follow > ul > li:nth-child(2) > a:nth-child(2) {
+    background: url("../img/download.png") -83px 0 no-repeat;
+    margin-left: 20px;
+}
+
+.footerAbout > div.follow > ul > li:nth-child(2) > a:nth-child(2):hover {
+    background: url("../img/downloadcolor.png") -83px 0 no-repeat;
+}
+
+.footerAbout > div.follow > ul > li:nth-child(2) > a:nth-child(3) {
+    background: url("../img/download.png") -166px 0 no-repeat;
+    margin-left: 20px;
+}
+
+.footerAbout > div.follow > ul > li:nth-child(2) > a:nth-child(3):hover {
+    background: url("../img/downloadcolor.png") -166px 0 no-repeat;
+}
+
+.footerAbout > div.friendly > ul > li {
+    margin-top: 20px;
+}
+
+.footerAbout > div.friendly > ul > li > a {
+    color: rgb(89, 88, 88);
+    font-size: 14px;
+}
+
+.footerAbout > div.friendly > ul > li > a:hover {
+    color: rgb(171, 171, 171);
+}
+
+footer > p {
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: black;
+    text-align: center;
+    color: rgb(89, 88, 88);
+    font-size: 14px;
+    line-height: 35px;
+}
+

@@ -1,0 +1,256 @@
+@import "reset.min.css";
+@import "header.css";
+@import "linkAbout.css";
+/*头部图片*/
+div.headerImg {
+    width: 100%;
+    height: 300px;
+}
+
+div.headerImg > img {
+    width: 100%;
+    height: 100%;
+}
+
+/*关于我们  公司简介部分*/
+div.container {
+    padding-top:40px;
+    width: 1100px;
+    margin: 0 auto 0;
+    overflow: hidden;
+}
+
+div.container > div.aboutWe {
+    float: left;
+    width: 228px;
+    height: 216px;
+    background: white;
+    border: 1px solid rgb(221, 221, 221);
+}
+
+div.container > div.aboutWe > h3 {
+    width: 228px;
+    height: 61px;
+    line-height: 61px;
+    text-indent: 20px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    color: rgb(51,51,51);
+}
+
+div.container > div.aboutWe > ul {
+    width: 228px;
+    height: 135px;
+    font-size: 15px;
+    padding: 10px 0 10px 0;
+}
+div.container > div.aboutWe > ul>li{
+    width: 228px;
+    height: 45px;
+    margin: 0 auto 0;
+    line-height: 45px;
+    text-indent: 20px;
+    cursor: pointer;
+}
+div.container > div.aboutWe > ul>li:hover{
+    background: rgb(233,233,233);
+}
+div.container > div.aboutWe > ul>li.color{
+    border-left: 4px solid rgb(233,40,12);
+    background: rgb(239,239,239);
+}
+
+div.container > div.aboutUs {
+    width: 830px;
+    float: right;
+    margin-right: 20px;
+}
+div.container>div.aboutUs>div.aboutUs_header{
+    width: 830px;
+    height: 60px;
+    border-bottom: 1px solid rgb(221,221,221);
+    line-height: 60px;
+}
+/*在线反馈*/
+div.seat{
+    width: 1100px;
+    height: 50px;
+    margin:  0 auto 0;
+    line-height: 50px;
+}
+div.seat>a{
+    font-size: 13px;
+    font-weight: 900;
+    color: rgb(153,153,153);
+}
+div.contact{
+    width: 1110px;
+    margin: 0 auto 0;
+    overflow: hidden;
+}
+div.contact>div.aboutWe{
+    float: left;
+}
+div.contact> div.aboutWe {
+    float: left;
+    width: 228px;
+    height: 216px;
+    background: white;
+    border: 1px solid rgb(221, 221, 221);
+}
+
+div.contact > div.aboutWe > h3 {
+    width: 228px;
+    height: 61px;
+    line-height: 61px;
+    text-indent: 20px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    color: rgb(51,51,51);
+}
+
+div.contact > div.aboutWe > ul {
+    width: 228px;
+    height: 135px;
+    font-size: 15px;
+    padding: 10px 0 10px 0;
+}
+div.contact > div.aboutWe > ul>li{
+    width: 228px;
+    height: 45px;
+    margin: 0 auto 0;
+    line-height: 45px;
+    text-indent: 20px;
+    cursor: pointer;
+}
+div.contact> div.aboutWe > ul>li:hover{
+    background: rgb(233,233,233);
+}
+div.contact > div.aboutWe > ul>li.color{
+    border-left: 4px solid rgb(233,40,12);
+    background: rgb(239,239,239);
+}
+div.contact>div.lineFeed{
+    float: right;
+    width: 848px;
+    margin-right:15px;
+}
+/*以下都在div.contact操作*/
+div.lineFeed>ul.lineTab{
+    width: 848px;
+    border: 1px solid rgb(221,221,221);
+}
+/*以下都在ul.lineTab操作*/
+ul.lineTab>li{
+    width: 848px;
+    border-bottom: 1px solid rgb(221,221,221);
+}
+ul.lineTab>li.title{
+    height: 61px;
+    background: rgb(221,221,221);
+    color: rgb(51,51,51);
+    line-height:61px;
+    text-indent: 20px;
+}
+ul.lineTab>li.same{
+    height: 69px;
+    color:rgb(51,51,51);
+    font-size: 15px;
+    font-weight: 400;
+}
+ul.lineTab>li.same>span{
+    margin-left: 20px;
+    line-height: 70px;
+    display: inline-block;
+    width: 60px;
+}
+ul.lineTab>li.same>select{
+    width: 81px;
+    height: 31px;
+    font-size: 14px;
+    margin-left: 80px;
+}
+ul.lineTab>li.same>input{
+    width: 364px;
+    height: 36px;
+    font-size: 14px;
+    margin-left: 80px;
+    outline: none;
+}
+ul.lineTab>li.messages{
+    height: 155px;
+    font-size: 15px;
+    color: rgb(51,51,51);
+}
+ul.lineTab>li.messages>span{
+    line-height: 70px;
+    width: 60px;
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: top;
+}
+ul.lineTab>li.messages>textarea{
+    width: 362px;
+    height: 116px;
+    margin-left: 80px;
+    border: 1px solid rgb(221,221,221);
+    margin-top: 20px;
+    outline: none;
+}
+ul.lineTab>li.message{
+    height: 173px;
+    font-size: 15px;
+}
+ul.lineTab>li.message>span{
+    display: inline-block;
+    width: 110px;
+    font-size: 15px;
+    vertical-align: top;
+    /*line-height: p;*/
+    margin-top: 20px;
+}
+ul.lineTab>li.message>form{
+    display: inline-block;
+    margin-left: 50px;
+}
+ul.lineTab>li.message>form>label{
+    display: block;
+    margin-top: 10px;
+}
+ul.lineTab>li.test{
+    height: 67px;
+    font-size: 15px;
+}
+ul.lineTab>li.test>span{
+    margin-left: 20px;
+    line-height: 70px;
+    display: inline-block;
+    width: 60px;
+}
+ul.lineTab>li.test>input{
+    width: 92px;
+    height: 34px;
+    margin-left: 80px;
+}
+ul.lineTab>li.submit{
+    height: 67px;
+    font-size: 15px;
+    padding-top: 16.5px;
+}
+ul.lineTab>li.submit>div{
+    width: 126px;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    color: white;
+    font-weight: 900;
+    background: rgb(35,183,229);
+    margin-left: 160px;
+}
+footer{
+    font-size: 12px;
+    width: 100%;
+    height: 35px;
+    background: black;
+    color: rgb(74,74,74);
+    text-align: center;
+    line-height: 35px;
+}

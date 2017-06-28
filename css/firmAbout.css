@@ -1,0 +1,115 @@
+@import "reset.min.css";
+@import "header.css";
+@import "linkAbout.css";
+/*头部图片*/
+div.headerImg {
+    width: 100%;
+    height: 300px;
+}
+
+div.headerImg > img {
+    width: 100%;
+    height: 100%;
+}
+
+/*关于我们  公司简介部分*/
+div.container {
+    padding-top:40px;
+    width: 1100px;
+    margin: 0 auto 0;
+    overflow: hidden;
+}
+
+div.container > div.aboutWe {
+    float: left;
+    width: 228px;
+    height: 216px;
+    background: white;
+    border: 1px solid rgb(221, 221, 221);
+}
+
+div.container > div.aboutWe > h3 {
+    width: 228px;
+    height: 61px;
+    line-height: 61px;
+    text-indent: 20px;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    color: rgb(51,51,51);
+}
+
+div.container > div.aboutWe > ul {
+    width: 228px;
+    height: 135px;
+    font-size: 15px;
+    padding: 10px 0 10px 0;
+}
+div.container > div.aboutWe > ul>li{
+    width: 228px;
+    height: 45px;
+    margin: 0 auto 0;
+    line-height: 45px;
+    text-indent: 20px;
+    cursor: pointer;
+}
+div.container > div.aboutWe > ul>li:hover{
+    background: rgb(233,233,233);
+}
+div.container > div.aboutWe > ul>li.color{
+    border-left: 4px solid rgb(233,40,12);
+    background: rgb(239,239,239);
+}
+
+div.container > div.aboutUs {
+    width: 830px;
+    float: right;
+    margin-right: 20px;
+}
+div.container>div.aboutUs>div.aboutUs_header{
+    width: 830px;
+    height: 60px;
+    border-bottom: 1px solid rgb(221,221,221);
+    line-height: 60px;
+}
+/*以下都在div.container下面操作*/
+div.aboutUs>div.aboutUs_header:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+div.aboutUs>div.aboutUs_header>h3{
+    float: left;
+    color: rgb(51,51,51);
+}
+div.aboutUs>div.aboutUs_header>div{
+    float: right;
+    font-size: 14.5px;
+    font-weight: 900;
+}
+div.aboutUs>div.aboutUs_header>div>a{
+    color: rgb(153,153,153);
+}
+div.aboutUs>div.text{
+    margin-top: 60px;
+    font-size: 14px;
+    letter-spacing: -0.1px;
+    text-align: justify;
+    line-height: 29px;
+}
+div.aboutUs>div.text>p:nth-child(1){
+    width: 461px;
+}
+div.aboutUs>div.text>p:nth-child(4){
+    margin-top: 40px;
+}
+div.aboutUs>div.text>p:nth-child(6){
+    margin-top: 40px;
+}
+footer{
+    font-size: 12px;
+    width: 100%;
+    height: 35px;
+    background: black;
+    color: rgb(74,74,74);
+    text-align: center;
+    line-height: 35px;
+}
